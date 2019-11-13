@@ -21,27 +21,27 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.github.jrcodeza</groupId>
+				<groupId>com.github.wolfey</groupId>
 				<artifactId>spring-openapi-schema-generator-plugin</artifactId>
 				<configuration>
 					<title>Test title</title>
 					<description>Test description</description>
 					<version>1.0.0-TEST</version>
 					<modelPackages>
-						<modelPackage>com.github.jrcodeza.schema.generator.plugin.model.*</modelPackage>
+						<modelPackage>com.github.wolfey.schema.generator.plugin.model.*</modelPackage>
 					</modelPackages>
 					<controllerBasePackages>
-						<controllerBasePackage>com.github.jrcodeza.schema.generator.plugin.controller.*</controllerBasePackage>
+						<controllerBasePackage>com.github.wolfey.schema.generator.plugin.controller.*</controllerBasePackage>
 					</controllerBasePackages>
 					<outputDirectory>target/openapi</outputDirectory>
 					<schemaFieldInterceptors>
-						<schemaFieldInterceptor>com.github.jrcodeza.schema.generator.plugin.interceptor.TestSchemaFieldInterceptor</schemaFieldInterceptor>
+						<schemaFieldInterceptor>com.github.wolfey.schema.generator.plugin.interceptor.TestSchemaFieldInterceptor</schemaFieldInterceptor>
 					</schemaFieldInterceptors>
 					<operationInterceptors>
-						<operationInterceptor>com.github.jrcodeza.schema.generator.plugin.interceptor.TestOperationInterceptor</operationInterceptor>
+						<operationInterceptor>com.github.wolfey.schema.generator.plugin.interceptor.TestOperationInterceptor</operationInterceptor>
 					</operationInterceptors>
 					<generateExamples>true</generateExamples>
-					<openApiExamplesResolver>com.github.jrcodeza.schema.generator.plugin.example.TestExampleResolver</openApiExamplesResolver>
+					<openApiExamplesResolver>com.github.wolfey.schema.generator.plugin.example.TestExampleResolver</openApiExamplesResolver>
 				</configuration>
 			</plugin>
 		</plugins>
